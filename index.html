@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dragula.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Framework Dragula</title>
+</head>
+<body>
+    <section id="contenedor">
+        <div>
+            <h1>To-Do</h1>
+            <ul id="to-do">
+                <li>Salir a cazar</li>
+                <li>Buscar munición</li>
+            </ul>
+        </div>
+        <div>
+            <h1>Wip</h1>
+            <ul id="wip">
+                <li>Sacar al caballo a pasear</li>
+                <li>Descansar del descanso</li>
+            </ul>
+        </div>
+        <div>
+            <h1>End</h1>
+            <ul id="end">
+                <li>Sacar al caballo a pasear</li>
+                <li>Descansar del descanso</li>
+            </ul>
+        </div>
+    </section>
+
+    <script src="dragula.js"></script>
+    <script>
+        dragula([document.getElementById('to-do'), 
+        document.getElementById('wip'),
+        document.getElementById('end')]);
+    </script>
+</body>
+</html>
